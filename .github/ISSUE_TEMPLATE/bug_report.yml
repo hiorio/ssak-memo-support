@@ -1,0 +1,25 @@
+name: 문제 신고
+description: 싹 메모 사용 중 발생한 문제를 알려 주세요.
+title: "[문제] "
+labels: [bug]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 어떤 문제가 있었나요?
+      description: 기대한 동작과 실제 동작을 함께 적어 주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 재현 방법
+      placeholder: "1. …\n2. …\n3. …"
+  - type: input
+    id: environment
+    attributes:
+      label: 기기와 iOS 버전
+      placeholder: iPhone 모델, iOS 버전
+  - type: markdown
+    attributes:
+      value: "메모 원문, 음성 내용, 연락처 등 개인정보는 올리지 마세요."

@@ -1,0 +1,18 @@
+name: 기능 제안
+description: 싹 메모에 바라는 점을 알려 주세요.
+title: "[제안] "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: 어떤 기능이 있으면 좋을까요?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: 어떤 상황에서 필요했나요?
+  - type: markdown
+    attributes:
+      value: "메모 원문, 음성 내용, 연락처 등 개인정보는 올리지 마세요."
