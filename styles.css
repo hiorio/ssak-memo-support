@@ -25,6 +25,25 @@ main {
   padding: 72px 0 96px;
 }
 
+.language-switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-bottom: 28px;
+  font-size: 14px;
+}
+
+.language-switcher a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.language-switcher a[aria-current="page"] {
+  color: var(--ink);
+  font-weight: 750;
+  text-decoration: underline;
+}
+
 .brand {
   display: inline-flex;
   align-items: center;
@@ -103,4 +122,5 @@ footer {
   .card { background: rgba(255, 255, 255, 0.05); border-color: rgba(255, 255, 255, 0.12); }
   a { color: #96c7a1; }
   .button { background: var(--ivory); color: var(--navy); }
+  .language-switcher a[aria-current="page"] { color: #f5f1e8; }
 }
